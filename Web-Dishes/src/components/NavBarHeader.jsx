@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaShoppingCart, FaMicrophone } from "react-icons/fa";
+import { FaMicrophone } from "react-icons/fa";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { MdArrowDropDown } from "react-icons/md";
@@ -141,7 +141,7 @@ return (
                             </div>
                         </li>
                         )}
-                        <li className=" text-base md:text-md text-center">Create Account</li>
+                        <li className=" text-base md:text-md text-center"><Link to='/CreateAccount/'> Create Account</Link></li>
                         {location.pathname !== '/' && <li className="text-base md:text-md flex items-center"> Setting
                             <IoSettingsSharp />
                         </li>}
@@ -238,7 +238,7 @@ return (
                             </div>
                         </li>
                         )}
-                        <li className=" text-base md:text-md ">Create Account</li>
+                        <li className=" text-base md:text-md"><Link to='/CreateAccount/'> Create Account</Link></li>
                         {location.pathname !== '/' && <li className="text-base md:text-md flex items-center"> Setting
                             <IoSettingsSharp />
                         </li>}

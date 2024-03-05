@@ -13,7 +13,7 @@ return (
         </div>
         <div>
             <Card3 title="Indian Lunch"  famousDish={IndianLunch}/>
-        </div>
+        </div>   
         <div>
             <Card3 title="Indian Dinner" famousDish={IndianDinner}/>
         </div>

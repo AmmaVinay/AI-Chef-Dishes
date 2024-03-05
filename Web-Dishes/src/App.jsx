@@ -4,7 +4,9 @@ import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SingleDish from './pages/SingleDish';
 import Cooking from './pages/Cooking';
-import Login from './pages/Login';
+import CreateAccount from './components/LoginSineupPage/CreateAccount';
+import LoginIn from './components/LoginSineupPage/LoginIn';
+
 import Layout from './components/Layout';
 import TeamPage from './pages/TeamPage';
 import LuxuryDishes from './components/Dishes/Luxury-Dishes/LuxuryDishes';
@@ -51,8 +53,9 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/cooking' element={<Cooking />} />
           <Route path='/teampage' element={<TeamPage />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/Luxury-Dishes' element={<LuxuryDishes />} />
+          <Route path='/CreateAccount' element={<CreateAccount />} />
+          <Route path='/login' element={<LoginIn />} />
+           <Route path='/Luxury-Dishes' element={<LuxuryDishes />} />
           <Route path='/Luxury-Dishes/Spanish' element={<Spanish />} />
           <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryBreakFast' element={<SpanishLuxuryBreakFast />} />
           <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryLunch' element={<SpanishLuxuryLunch />} />
