@@ -121,7 +121,7 @@ const DishText = 'https://see.fontimg.com/api/renderfont4/BWA45/eyJyIjoiZnMiLCJo
                 {filteredCountry.map((dish, index) => (
                 <div key={index} className='text-center'>
                         <Link to={dish.LuxuryDishesPath}>
-                     <div className='flex py-8 flex-col items-center hover:scale-110 transition-transform duration-300 transition'>
+                     <div className='flex py-8 flex-col items-center hover:scale-110 transition-transform duration-300  '>
                         <img style={{ width: '200px', height: '200px', borderRadius: '50%' }} className='object-cover border-2 h-48 shadow-xl shadow-slate-400' src={`https://flagcdn.com/${dish.countryFlag}.svg`} alt={dish.countryName} />
                         <p className='mt-3 text-center text-lg font-bold'>{dish.countryName}</p>
                     </div>

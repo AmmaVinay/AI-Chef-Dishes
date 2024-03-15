@@ -42,53 +42,61 @@ import ArunachalPradeshLuxuryDinner from './components/Dishes/All-NavItem/Arunac
 import QuickDishes from './components/Dishes/Quick-Dishes/QuickDishes';
 import HealthyDishes from './components/Dishes/Healthy-Dishes/HealthyDishes';
 import NavBarHeader from './components/NavBarHeader';
+import ChooseRegion from './components/Dishes/Create-Dishes/ChooseRegion';
+import ChooseWorldCountries from './components/Dishes/Create-Dishes/ChooseWorldCountries';
+import ChooseIndia from './components/Dishes/Create-Dishes/ChooseIndia';
+import ChooseVegNonVeg from './components/Dishes/Create-Dishes/ChooseVegNonVeg';
 
 const App = () => {
-  return (
-    <>  
-      <BrowserRouter>
+return (
+<>
+    <BrowserRouter>
         <Layout />
         <NavBarHeader />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/cooking' element={<Cooking />} />
-          <Route path='/teampage' element={<TeamPage />} />
-          <Route path='/CreateAccount' element={<CreateAccount />} />
-          <Route path='/login' element={<LoginIn />} />
-           <Route path='/Luxury-Dishes' element={<LuxuryDishes />} />
-          <Route path='/Luxury-Dishes/Spanish' element={<Spanish />} />
-          <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryBreakFast' element={<SpanishLuxuryBreakFast />} />
-          <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryLunch' element={<SpanishLuxuryLunch />} />
-          <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryDinner' element={<SpanishLuxuryDinner />} />
-          <Route path='/Luxury-Dishes/Indian' element={<Indian />} />
-          <Route path='/Luxury-Dishes/Indian/IndianLuxuryBreakFast' element={<IndianLuxuryBreakFast />} />
-          <Route path='/Luxury-Dishes/Indian/IndianLuxuryLunch' element={<IndianLuxuryLunch />} />
-          <Route path='/Luxury-Dishes/Indian/IndianLuxuryDinner' element={<IndianLuxuryDinner />} />
-          <Route path='/Masala-Dosa' element={<MasalaDosa />} />
-          <Route path='/Masala-Dosa-Cook' element={<MasalaDosaCook />} />
-          <Route path='/Idli-Sambar' element={<IdliSambar />} />
-          <Route path='/Idli-Sambar-Cook' element={<IdliSambarCook />} />
-          <Route path='/Poha' element={<Poha />} />
-          <Route path='/Poha-Cook' element={<PohaCook />} />
-          <Route path='/Aloo-Paratha' element={<AlooParatha />} />
-          <Route path='/Aloo-Paratha-Cook' element={<AlooParathaCook />} />
+            <Route path='/ChooseVegNonVeg' element={<ChooseVegNonVeg />} />
+            <Route path='/ChooseRegion' element={<ChooseRegion />} />
+            <Route path='/rest-of-the-world' element={<ChooseWorldCountries />} />
+            <Route path='/choose-india' element={<ChooseIndia />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/cooking' element={<Cooking />} />
+            <Route path='/teampage' element={<TeamPage />} />
+            <Route path='/CreateAccount' element={<CreateAccount />} />
+            <Route path='/login' element={<LoginIn />} />
+            <Route path='/Luxury-Dishes' element={<LuxuryDishes />} />
+            <Route path='/Luxury-Dishes/Spanish' element={<Spanish />} />
+            <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryBreakFast' element={<SpanishLuxuryBreakFast />} />
+            <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryLunch' element={<SpanishLuxuryLunch />} />
+            <Route path='/Luxury-Dishes/Spanish/SpanishLuxuryDinner' element={<SpanishLuxuryDinner />} />
+            <Route path='/Luxury-Dishes/Indian' element={<Indian />} />
+            <Route path='/Luxury-Dishes/Indian/IndianLuxuryBreakFast' element={<IndianLuxuryBreakFast />} />
+            <Route path='/Luxury-Dishes/Indian/IndianLuxuryLunch' element={<IndianLuxuryLunch />} />
+            <Route path='/Luxury-Dishes/Indian/IndianLuxuryDinner' element={<IndianLuxuryDinner />} />
+            <Route path='/Masala-Dosa' element={<MasalaDosa />} />
+            <Route path='/Masala-Dosa-Cook' element={<MasalaDosaCook />} />
+            <Route path='/Idli-Sambar' element={<IdliSambar />} />
+            <Route path='/Idli-Sambar-Cook' element={<IdliSambarCook />} />
+            <Route path='/Poha' element={<Poha />} />
+            <Route path='/Poha-Cook' element={<PohaCook />} />
+            <Route path='/Aloo-Paratha' element={<AlooParatha />} />
+            <Route path='/Aloo-Paratha-Cook' element={<AlooParathaCook />} />
 
-          <Route path='/All-Indian-Dishes' element={<IndianStatesDishes />} />
-          <Route path='/All-Indian-Dishes/AndhraPradesh' element={<AndhraPradesh />} />
-          <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryBreakFast' element={<AndhraPradeshLuxuryBreakFast />} />
-          <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryLunch' element={<AndhraPradeshLuxuryLunch />} />
-          <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryDinner' element={<AndhraPradeshLuxuryDinner />} />
-          <Route path='/All-Indian-Dishes/ArunachalPradesh' element={<ArunachalPradesh />} />
-          <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryBreakFast' element={<ArunachalPradeshLuxuryBreakFast />} />
-          <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryLunch' element={<ArunachalPradeshLuxuryLunch />} />
-          <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryDinner' element={<ArunachalPradeshLuxuryDinner />} />
-          <Route path='/Quick-Dishes' element={<QuickDishes />} />
-          <Route path='/Healthy-Dishes' element={<HealthyDishes />} />
-          <Route path='/Pesarattu-info' element={<SingleDish />} />
-         </Routes>
-      </BrowserRouter>
-    </>
-  );
+            <Route path='/All-Indian-Dishes' element={<IndianStatesDishes />} />
+            <Route path='/All-Indian-Dishes/AndhraPradesh' element={<AndhraPradesh />} />
+            <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryBreakFast' element={<AndhraPradeshLuxuryBreakFast />} />
+            <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryLunch' element={<AndhraPradeshLuxuryLunch />} />
+            <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryDinner' element={<AndhraPradeshLuxuryDinner />} />
+            <Route path='/All-Indian-Dishes/ArunachalPradesh' element={<ArunachalPradesh />} />
+            <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryBreakFast' element={<ArunachalPradeshLuxuryBreakFast />} />
+            <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryLunch' element={<ArunachalPradeshLuxuryLunch />} />
+            <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryDinner' element={<ArunachalPradeshLuxuryDinner />} />
+            <Route path='/Quick-Dishes' element={<QuickDishes />} />
+            <Route path='/Healthy-Dishes' element={<HealthyDishes />} />
+            <Route path='/Pesarattu-info' element={<SingleDish />} />
+        </Routes>
+    </BrowserRouter>
+</>
+);
 }
 
 export default App;

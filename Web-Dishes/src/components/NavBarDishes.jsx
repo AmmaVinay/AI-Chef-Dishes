@@ -15,7 +15,7 @@ export default function NavBarDishes({ onCategoryClick }) {
     { path: "/Luxury-Dishes", label: "Luxury Dishes" },
     { path: "/Quick-Dishes", label: "Quick Dishes" },
     { path: "/Healthy-Dishes", label: "Healthy Dishes" },
-    { path: "/Create-Dishes", label: "Create Dishes" },
+    { path: "/ChooseVegNonVeg", label: "Create Dishes" },
   ];
 
   return (

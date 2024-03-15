@@ -10,7 +10,7 @@ function SeeMoreDishes({ searchTerm, setSearchTerm, filteredDish }) {
         <SearchDish setSearchTerm={setSearchTerm} />
       </div>  
 
-      <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap justify-center ">
         {filteredDish.length > 0 ? (
           filteredDish.map((dish, index) => (
             <Card2 key={index} title={dish.dishName} dishPath={dish.dishPath} imageUrl={dish.dishImage} time={60} rating={4.5} />

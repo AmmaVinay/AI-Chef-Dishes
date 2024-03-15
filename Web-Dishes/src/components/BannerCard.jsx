@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-
+import Slide  from 'react-reveal/Zoom'
 const BannerCard = ({ slides, title, subtitle }) => {
   var settings = {
     dots: false,
@@ -28,8 +28,10 @@ const BannerCard = ({ slides, title, subtitle }) => {
       </Slider>
 
       <div className="text-white absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center">
+        <Slide bottom cascade>
         <div className="text-4xl font-bold mb-8">{title}</div>
         <div className="text-2xl font-semibold mb-5">{subtitle}</div>
+        </Slide >
       </div>
     </div>
   );
