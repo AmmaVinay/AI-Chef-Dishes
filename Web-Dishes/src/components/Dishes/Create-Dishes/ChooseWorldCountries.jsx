@@ -9,7 +9,7 @@ return (
                 {CountryFlag.map((country, index) => (
                     <div key={index} className="bg-[#00544f] p-5 rounded-2xl shadow-md transform hover:scale-105 transition duration-300">
                         <div className="flex justify-center">
-                            <div className="w-24 h-24 hover:animate-wiggle-more rounded-full overflow-hidden">
+                            <div className="w-24 h-24 rounded-full overflow-hidden">
                                 <img style={{ objectFit: 'cover' }} src={`https://flagcdn.com/${country.countryFlag}.svg`} alt={country.countryName} className="w-full h-full object-cover" />
                             </div>
                         </div>

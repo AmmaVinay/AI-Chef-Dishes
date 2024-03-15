@@ -24,7 +24,7 @@ function ChooseVegNonVeg() {
                 <div className="flex flex-wrap justify-center gap-6">
                     {regions.map(({ name, imageSrc, altText, path }, index) => (
                         <Link key={index} onClick={() => window.scrollTo(0, 0)} to={path}>
-                            <div className='flex-shrink-0 animate-rotate-y  bg-[#00544f] text-center p-8 rounded-md shadow-md hover:-translate-y-1 hover:transition-shadow cursor-pointer'>
+                            <div className='flex-shrink-0 hover:animate-fade bg-[#00544f] text-center p-8 rounded-md shadow-md hover:-translate-y-1 hover:transition-shadow cursor-pointer'>
                                 <div className="flex justify-center">
                                     <div className="w-36 h-36 rounded-full overflow-hidden hover:scale-105 hover:animate-wiggle-more ">
                                         <img src={imageSrc} className="w-full h-full object-cover" alt={altText} style={{ objectFit: 'cover' }} />

@@ -25,7 +25,7 @@ path: "/rest-of-the-world"
           <Link onClick={() => window.scrollTo(0,0)} to={path}>
              <div className='flex-shrink-0 hover:animate-fade bg-[#00544f] text-center p-8 rounded-md shadow-md hover:-translate-y-1 hover:transition-shadow cursor-pointer'>
                 <div className="flex justify-center">
-                    <div className="w-36 h-36 rounded-full overflow-hidden hover:scale-105 hover:animate-wiggle-more ">
+                    <div className="w-36 h-36 rounded-full overflow-hidden hover:scale-105 ">
                         <img src={imageSrc} className="w-full h-full object-cover" alt={altText} style={{ objectFit: 'cover' }} />
                     </div>
                 </div>
