@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
-import { GrNext } from "react-icons/gr";
-import { MdOutlineArrowBackIos } from "react-icons/md";
-
-function ChooseRegion() {
-const [selectedRegion, setSelectedRegion] = useState(null);
-const regions = [
+ function ChooseRegion() {
+ const regions = [
 {
 name: "India", imageSrc: "https://flagcdn.com/in.svg", altText: "India Flag",
 path: "/choose-india"

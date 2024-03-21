@@ -59,7 +59,6 @@ slidesToScroll: 4,
     );
   }
 
-
 useEffect(() => {
 const handleResize = () => {
 const screenWidth = window.innerWidth;

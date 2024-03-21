@@ -37,7 +37,6 @@ function ChooseVegNonVeg() {
                 </div>
             </div>
          </div>
-
     );
 }
 

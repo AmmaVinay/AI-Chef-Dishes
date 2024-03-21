@@ -42,11 +42,13 @@ import ArunachalPradeshLuxuryDinner from './components/Dishes/All-NavItem/Arunac
 import QuickDishes from './components/Dishes/Quick-Dishes/QuickDishes';
 import HealthyDishes from './components/Dishes/Healthy-Dishes/HealthyDishes';
 import NavBarHeader from './components/NavBarHeader';
-import ChooseRegion from './components/Dishes/Create-Dishes/ChooseRegion';
-import ChooseWorldCountries from './components/Dishes/Create-Dishes/ChooseWorldCountries';
-import ChooseIndia from './components/Dishes/Create-Dishes/ChooseIndia';
-import ChooseVegNonVeg from './components/Dishes/Create-Dishes/ChooseVegNonVeg';
-
+import ChooseRegion from './components/ChooseRegions/ChooseRegion';
+import ChooseWorldCountries from './components/ChooseRegions/ChooseWorldCountries';
+import ChooseIndia from './components/ChooseRegions/ChooseIndia'
+import ChooseVegNonVeg from './components/ChooseRegions/ChooseVegNonVeg';
+import RecommandedSeeMore from '../src/components/Dishes/Healthy-Dishes/RecommandedSeeMore'
+import CreateMenu from './components/Dishes/Create-Menu/CreateMenu';
+import HighProtein from './components/Dishes/Healthy-Dishes/HighProtein';
 const App = () => {
 return (
 <>
@@ -80,7 +82,7 @@ return (
             <Route path='/Poha-Cook' element={<PohaCook />} />
             <Route path='/Aloo-Paratha' element={<AlooParatha />} />
             <Route path='/Aloo-Paratha-Cook' element={<AlooParathaCook />} />
-
+            <Route path='/HighProtein' element={<HighProtein />} />
             <Route path='/All-Indian-Dishes' element={<IndianStatesDishes />} />
             <Route path='/All-Indian-Dishes/AndhraPradesh' element={<AndhraPradesh />} />
             <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryBreakFast' element={<AndhraPradeshLuxuryBreakFast />} />
@@ -92,6 +94,10 @@ return (
             <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryDinner' element={<ArunachalPradeshLuxuryDinner />} />
             <Route path='/Quick-Dishes' element={<QuickDishes />} />
             <Route path='/Healthy-Dishes' element={<HealthyDishes />} />
+            
+            <Route path='/Create-Menu' element={<CreateMenu />} />
+            <Route path='/RecommandedSeeMore' element={<RecommandedSeeMore /> } />
+            
             <Route path='/Pesarattu-info' element={<SingleDish />} />
         </Routes>
     </BrowserRouter>
