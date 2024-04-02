@@ -6,6 +6,7 @@ const HighProteinData = [
     imageUrl:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
     title: "Chana Masala",
+    dishPath: "/chana-masala",
     time: "40",
     rating: "4.4",
     description: "Nutritional values (per 100g)",

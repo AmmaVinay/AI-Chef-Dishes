@@ -19,6 +19,7 @@ import Indian from './components/Dishes/Luxury-Dishes/India/Indian';
 import IndianLuxuryBreakFast from './components/Dishes/Luxury-Dishes/India/IndianLuxuryBreakFast';
 import IndianLuxuryLunch from './components/Dishes/Luxury-Dishes/India/IndianLuxuryLunch';
 import IndianLuxuryDinner from './components/Dishes/Luxury-Dishes/India/IndianLuxuryDinner';
+
 import MasalaDosa from './components/Dishes/Luxury-Dishes/India/BreakFastSingleItems/MasalaDosa';
 import MasalaDosaCook from './components/Dishes/Luxury-Dishes/India/BreakFastSingleItems/MasalaDosaCook';
 import IdliSambar from './components/Dishes/Luxury-Dishes/India/BreakFastSingleItems/IdliSambar';
@@ -46,9 +47,22 @@ import ChooseRegion from './components/ChooseRegions/ChooseRegion';
 import ChooseWorldCountries from './components/ChooseRegions/ChooseWorldCountries';
 import ChooseIndia from './components/ChooseRegions/ChooseIndia'
 import ChooseVegNonVeg from './components/ChooseRegions/ChooseVegNonVeg';
-import RecommandedSeeMore from '../src/components/Dishes/Healthy-Dishes/RecommandedSeeMore'
 import CreateMenu from './components/Dishes/Create-Menu/CreateMenu';
-import HighProtein from './components/Dishes/Healthy-Dishes/HighProtein';
+import UserProfile from './components/ProfileSetting/UserProfile'
+import SavedRecipes from './components/ProfileSetting/SavedRecipes';
+import RecipesHistory from './components/ProfileSetting/RecipesHistory';
+import UpgradePremium from './components/ProfileSetting/UpgradePremium';
+import SavedMenu from './components/ProfileSetting/SavedMenu';
+import ChanaMasala from './components/Dishes/Healthy-Dishes/High-Protein/SingleDishItems/ChanaMasala';
+import ChanaMasalaCook from './components/Dishes/Healthy-Dishes/High-Protein/SingleDishItems/ChanaMasalaCook';
+import RecommendedQuickDishes from './components/Dishes/Quick-Dishes/RecommendedQuickDishes';
+import SuggestedRandomQuickDishes from './components/Dishes/Quick-Dishes/SuggestedRandomQuickDishes';
+import HighProteinSeeMore from './components/Dishes/Healthy-Dishes/High-Protein/HighProteinSeeMore';
+import LowCaloriesSeeMore from './components/Dishes/Healthy-Dishes/Low-Calories/LowCaloriesSeeMore';
+import GlutenFreeSeeMore from './components/Dishes/Healthy-Dishes/Gluten-Free/GlutenFreeSeeMore';
+import KetoSeeMore from './components/Dishes/Healthy-Dishes/Keto/KetoSeeMore';
+import SugarFreeSeeMore from './components/Dishes/Healthy-Dishes/Sugar-Free/SugarFreeSeeMore';
+import VegetablesSeeMore from './components/Dishes/Healthy-Dishes/Vegetables/VegetablesSeeMore';
 const App = () => {
 return (
 <>
@@ -56,10 +70,6 @@ return (
         <Layout />
         <NavBarHeader />
         <Routes>
-            <Route path='/ChooseVegNonVeg' element={<ChooseVegNonVeg />} />
-            <Route path='/ChooseRegion' element={<ChooseRegion />} />
-            <Route path='/rest-of-the-world' element={<ChooseWorldCountries />} />
-            <Route path='/choose-india' element={<ChooseIndia />} />
             <Route path='/' element={<Home />} />
             <Route path='/cooking' element={<Cooking />} />
             <Route path='/teampage' element={<TeamPage />} />
@@ -82,7 +92,7 @@ return (
             <Route path='/Poha-Cook' element={<PohaCook />} />
             <Route path='/Aloo-Paratha' element={<AlooParatha />} />
             <Route path='/Aloo-Paratha-Cook' element={<AlooParathaCook />} />
-            <Route path='/HighProtein' element={<HighProtein />} />
+ 
             <Route path='/All-Indian-Dishes' element={<IndianStatesDishes />} />
             <Route path='/All-Indian-Dishes/AndhraPradesh' element={<AndhraPradesh />} />
             <Route path='/All-Indian-Dishes/AndhraPradesh/AndhraPradeshLuxuryBreakFast' element={<AndhraPradeshLuxuryBreakFast />} />
@@ -94,11 +104,31 @@ return (
             <Route path='/All-Indian-Dishes/ArunachalPradesh/ArunachalPradeshLuxuryDinner' element={<ArunachalPradeshLuxuryDinner />} />
             <Route path='/Quick-Dishes' element={<QuickDishes />} />
             <Route path='/Healthy-Dishes' element={<HealthyDishes />} />
-            
+            <Route path='/RecommendedQuickDishes' element={<RecommendedQuickDishes /> } />
+            <Route path='/SuggestedRandomQuickDishes' element={<SuggestedRandomQuickDishes /> } />
+            <Route path='/HighProteinSeeMore' element={<HighProteinSeeMore />} />
+            <Route path='/LowCaloriesSeeMore' element={<LowCaloriesSeeMore />} />
+            <Route path='/GlutenFreeSeeMore' element={<GlutenFreeSeeMore />} />
+            <Route path='/KetoSeeMore' element={<KetoSeeMore />} />
+            <Route path='/SugarFreeSeeMore' element={<SugarFreeSeeMore />} />
+            <Route path='/VegetablesSeeMore' element={<VegetablesSeeMore />} />
+
+            <Route path='/chana-masala' element={<ChanaMasala />} />
+            <Route path='/chana-masala-cook' element={<ChanaMasalaCook />} />
+
             <Route path='/Create-Menu' element={<CreateMenu />} />
-            <Route path='/RecommandedSeeMore' element={<RecommandedSeeMore /> } />
             
             <Route path='/Pesarattu-info' element={<SingleDish />} />
+            <Route path='/ChooseVegNonVeg' element={<ChooseVegNonVeg />} />
+            <Route path='/ChooseRegion' element={<ChooseRegion />} />
+            <Route path='/rest-of-the-world' element={<ChooseWorldCountries />} />
+            <Route path='/choose-india' element={<ChooseIndia />} />
+            <Route path='/UserProfile' element={<UserProfile /> } />
+            <Route path='/saved-recipes' element={<SavedRecipes />} />
+            <Route path='/recipes-history' element={<RecipesHistory />} />
+            <Route path='/upgrade-premium' element={<UpgradePremium />} />
+            <Route path='/saved-menu' element={<SavedMenu />} />
+            <Route path='/RecommandedQuickDishes' element={<RecommendedQuickDishes />} />
         </Routes>
     </BrowserRouter>
 </>

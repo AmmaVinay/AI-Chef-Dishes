@@ -10,7 +10,7 @@ const IndianLuxuryBreakFast = () => {
   );
 
   return (
-    <div className="  bg-[#f7f3cd]  ">
+    <div className=" bg-[#f7f3cd]  ">
       <div>
         <h1 className='py-12 text-xl sm:text-3xl md:text-5xl text-center font-bold '>Indian Breakfast Dishes</h1>
       </div>

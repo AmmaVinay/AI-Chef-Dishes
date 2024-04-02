@@ -59,7 +59,7 @@ return (
         {({ open }) => (
         <>
             <div className="flex justify-between mx-1 items-center h-16">
-                <Link to='/'>
+                <Link to='/' onClick={() => window.scrollTo(0, 0)}>
                 <div className="flex items-center md:gap-1 lg:gap-3">
                     <img className="h-14 rounded-lg w-auto navbar-logo" src={CompanyLogo} alt="LOGO" />
                     <p className="text-lg font-bold md:text-sm lg:text-lg">AI CHEF MASTER</p>

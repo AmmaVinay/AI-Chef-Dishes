@@ -3,15 +3,14 @@ import Card2 from '../Card2';
 import SeasonalDishesData from '../../Data/SeasonalDishesData';
 import TopDishesData from '../../Data/TopDishesData';
 import Fade from 'react-reveal/Fade';
- import { useInView } from 'react-intersection-observer'; // Add this import statement
+ import { useInView } from 'react-intersection-observer';  
 import 'animate.css/animate.min.css';
  
 const SeasonalTop = () => {
    const [animate, setAnimate] = useState(false);
   const { ref, inView } = useInView();
 
-  // Trigger animation when content is in view
-  useEffect(() => {
+   useEffect(() => {
        if (inView) {
         setAnimate(true);
       } else {

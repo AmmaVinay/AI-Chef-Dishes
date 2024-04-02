@@ -78,7 +78,7 @@ import './Footer.css'
 
       <div className="w-full my-4">
         <p className="font-bold text-center">
-          © 2023 All rights reserved by AI CHEF MASTER.
+          © 2024 All rights reserved by Premali Kitchen Private Limited.
         </p>
       </div>
     </div>

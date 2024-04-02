@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { FaCalendarAlt } from "react-icons/fa";
+ import { FaCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
  import { CiCircleRemove } from "react-icons/ci";
 import Footer from "../../FooterItem/Footer";
-
+import React, { useState, useEffect } from 'react';
+import dayjs from 'dayjs';
+ 
 function CreateMenu() {
   const [numberOfPeople, setNumberOfPeople] = useState(0);
   const [selectedDate, setSelectedDate] = useState(null);
@@ -79,12 +80,43 @@ function CreateMenu() {
   const handleDatePickerClick = () => {
     setShowCalendar(true);
   };
+  const [selectedDateTime, setSelectedDateTime] = useState('');
+  const [countdown, setCountdown] = useState(null);
+
+  const handleInputChange = (event) => {
+    setSelectedDateTime(event.target.value);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (selectedDateTime) {
+        const selectedDate = dayjs(selectedDateTime);
+        if (selectedDate.isValid()) {
+          const diffInSeconds = selectedDate.diff(dayjs(), 'second');
+          if (diffInSeconds > 0) {
+            const days = Math.floor(diffInSeconds / (60 * 60 * 24));
+            const hours = Math.floor((diffInSeconds % (60 * 60 * 24)) / (60 * 60));
+            const minutes = Math.floor((diffInSeconds % (60 * 60)) / 60);
+            const seconds = diffInSeconds % 60;
+            setCountdown({ days, hours, minutes, seconds });
+          } else {
+            clearInterval(intervalId);
+          }
+        }
+      }
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [selectedDateTime]);
 
   return (
-  <div className="bg-[#f7f3cd] min-h-screen ">
-      <h1 className="text-[#00544f] text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center pt-8 md:pt-12">
-          Create A Menu Using The Ingredients You Have
-      </h1>
+    <div className="bg-[#f7f3cd] min-h-screen ">
+<div className="relative text-center mb-5">
+    <img className="relative h-auto md:h-[90vh] w-full" src="https://media.istockphoto.com/id/2061261654/photo/hands-waiter-and-writing-order-in-restaurant-for-service-hospitality-and-taking-notes-in.jpg?s=612x612&w=0&k=20&c=EO2HH5GcMZ8kdWejHa0pSm7nx6ZdcHuAIZV4B4fOT9Q=" />
+    <h1 className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-[#fff] text-3xl md:text-4xl lg:text-5xl font-bold mb-8 px-4">
+        Create A Menu Using The Ingredients You Have
+    </h1>
+</div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center align-items-center md:px-2">
           <div className="flex flex-col space-y-4">
               <div className="flex flex-col mb-4 ">
@@ -125,18 +157,23 @@ function CreateMenu() {
                       </button>
                   </div>
               </div>
-              <div className="">
-                  <h1 className="text-[#00544f] text-lg font-bold mb-3">Set Reminder</h1>
-                  <div className="flex items-center gap-3">
-                      <FaCalendarAlt size={25} className=" text-[#00544f]" />
-                      <DatePicker selected={selectedDate} onChange={(date)=> setSelectedDate(date)}
-                          onClick={handleDatePickerClick}
-                          dateFormat="MMMM d, yyyy h:mm aa"
-                          placeholderText="Select date and time"
-                          className="border-2 border-black rounded-md px-4 py-2"
-                          />
-                  </div>
-              </div>
+      <div className="">
+        <h1 className="text-[#00544f] text-lg font-bold mb-3">Set Reminder</h1>
+        <div className="flex items-center gap-3">
+          <input
+            type="datetime-local"
+            value={selectedDateTime}
+            onChange={handleInputChange}
+            className="border-2 border-black rounded-md px-4 py-2"
+          />
+        </div>
+        {countdown && (
+          <div>
+            <p>Countdown:</p>
+            <p>{`${countdown.days} days ${countdown.hours} hours ${countdown.minutes} minutes ${countdown.seconds} seconds`}</p>
+          </div>
+        )}
+      </div>
           </div>
 
           <div className="flex flex-col space-y-4">

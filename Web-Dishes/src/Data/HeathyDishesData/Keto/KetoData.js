@@ -81,8 +81,8 @@ const KetoData = [
     }
   },
   {
-    dishType: GlutenFree,
-    imageUrl: "Coconut_with_Chicken_Curry.jpg",
+    dishType: "Veg",
+    imageUrl: GlutenFree,
     title: "Coconut with Chicken Curry",
     time: "45",
     rating: "4.2",
@@ -96,9 +96,9 @@ const KetoData = [
     }
   },
   {
-    dishType:
+    dishType: "Non-Veg",
+    imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    imageUrl: "Keto_Butter_Chicken.jpg",
     title: "Keto Butter Chicken",
     time: "40",
     rating: "4.5",
@@ -144,9 +144,8 @@ const KetoData = [
     }
   },
   {
-    dishType:
-      "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    imageUrl: "Veggie_Stir_Fry_with_Quinoa.jpg",
+    dishType: "Veg",
+    imageUrl: GlutenFree,
     title: "Veggie Stir Fry with Quinoa",
     time: "25",
     rating: "4.6",

@@ -17,7 +17,9 @@ export default function NavBarDishes({ onCategoryClick }) {
     { path: "/Healthy-Dishes", label: "Healthy Dishes" },
    // { path: "/ChooseVegNonVeg", label: "Create Dishes" },
     { path: "/Create-Menu", label: "Create Menu" },
-    
+
+    //{ path: "/UserProfile", label: "Profile" },
+
   ];
 
   return (
