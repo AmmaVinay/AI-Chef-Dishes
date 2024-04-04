@@ -5,7 +5,7 @@ const Card2 = ({ title, imageUrl, time, rating,dishPath  }) => {
 const fullStars = Math.floor(rating);
 const hasHalfStar = rating % 1 !== 0;
  return (
-<div className="rounded-lg items-center h-[325px] flex flex-1 justify-center  flex-row md:flex-col  w-[325px]  transform hover:scale-105 transition duration-300 ">
+<div className="rounded-lg items-center h-[325px] flex flex-1 justify-center  flex-row md:flex-col  transform hover:scale-105 transition duration-300 ">
     <Link to={dishPath} onClick={() => window.scrollTo(0,0)}>
         <div className="cards-container flex justify-center items-center">
              <div className="card space-x-2 bg-[#00544f] ">

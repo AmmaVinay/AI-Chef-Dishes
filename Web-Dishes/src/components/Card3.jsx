@@ -76,13 +76,13 @@ const Card3 = ({ title, famousDish,  }) => {
   return (
     <div className="mx-12">
       <div className="flex flex-row justify-between items-center ">
-        <div className="flex font-bold text-xl sm:text-2xl md:text-4xl items-baseline mt-12 ">{title} </div>
+        <div className="flex font-bold text-xl mg:text-2xl lg:text-4xl items-baseline mt-12 ">{title} </div>
         {dishesSeeMorePath.map((path, index) => (
           title === path.title && (
             <Link key={index} to={path.pathUrl}>
-              <button className="relative ml-12 font-bold px-2 mt-12 h-7 ">
-                <div className="flex flex-row items-center justify-center " onClick={() => window.scrollTo(0, 0)}>
-                  <p className="mb-[0.25rem] text-lg sm:text-xl md:text-2xl">See More</p>
+              <button className=" ml-12  font-bold px-2 mt-12 h-7 ">
+                <div className="flex items-center mb-5 justify-center " onClick={() => window.scrollTo(0, 0)}>
+                  <p className=" text-lg md:text-2xl">See More</p>
                   <FaAngleRight />
                 </div>
               </button>

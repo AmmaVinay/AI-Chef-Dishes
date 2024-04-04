@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import QuickDishesRecommendedData from '../../../Data/QuickDishesRecommendedData/QuickDishesRecommendedData';
 import Footer from '../../../components/FooterItem/Footer';
 import BannerCard from '../../BannerCard';
@@ -34,14 +34,16 @@ function QuickDishes() {
       </div>
       <div>
         <div>
-          <div className='flex justify-end mt-12 mb-6 mr-8'>
+          <h1 className='text-center text-lg md:text-3xl lg:text-4xl text-[#00544f] font-bold mt-10'>Random Dishes</h1>
+
+          <div className='flex justify-end mt-12 mr-8'>
             <button onClick={() => window.scrollTo(0, 0)}>
               <Link to='/SuggestedRandomQuickDishes' className=' text-end font-bold text-lg sm:text-xl md:text-2xl'>See More</Link>
             </button>
           </div>
 
           <Marquee>
-            <div className="flex my-12 px-2 justify-center items-stretch">
+            <div className="flex my-12 gap-3 justify-center overflow-hidden items-stretch">
               {QuickDishesRecommendedData.map((dish, index) => (
                 <Flip key={index} cascade left> 
                   <animated.div style={fadeIn}>
@@ -52,16 +54,16 @@ function QuickDishes() {
             </div>
           </Marquee>
         </div>
-        <div className="pb-12">
-          <h1 className='text-center text-lg md:text-3xl lg:text-4xl text-[#00544f] font-bold my-10'>Recommended Dishes</h1>
-          <div className='flex justify-end mt-12 mb-6 mr-8'>
+        <div className="">
+          <h1 className='text-center text-lg md:text-3xl lg:text-4xl text-[#00544f] font-bold mt-10'>Recommended Dishes</h1>
+          <div className='flex justify-end mr-8'>
             <button onClick={() => window.scrollTo(0, 0)}>
               <Link to='/RecommendedQuickDishes' className=' text-end font-bold text-lg sm:text-xl md:text-2xl'>See More</Link>
             </button>
           </div>
 
           <Marquee>
-            <div className="flex mb-8 px-2 justify-center items-stretch">
+            <div className="flex my-12 gap-3 justify-center overflow-hidden items-stretch">
               {QuickDishesRecommendedData.map((dish, index) => (
                 <Flip key={index} cascade left> 
                   <animated.div style={fadeIn}> 

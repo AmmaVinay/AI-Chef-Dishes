@@ -63,6 +63,8 @@ import GlutenFreeSeeMore from './components/Dishes/Healthy-Dishes/Gluten-Free/Gl
 import KetoSeeMore from './components/Dishes/Healthy-Dishes/Keto/KetoSeeMore';
 import SugarFreeSeeMore from './components/Dishes/Healthy-Dishes/Sugar-Free/SugarFreeSeeMore';
 import VegetablesSeeMore from './components/Dishes/Healthy-Dishes/Vegetables/VegetablesSeeMore';
+import SeasonalDishes from './components/Seasonal-Top/SeasonalDishes';
+import TopDishes from './components/Seasonal-Top/TopDishes';
 const App = () => {
 return (
 <>
@@ -129,6 +131,8 @@ return (
             <Route path='/upgrade-premium' element={<UpgradePremium />} />
             <Route path='/saved-menu' element={<SavedMenu />} />
             <Route path='/RecommandedQuickDishes' element={<RecommendedQuickDishes />} />
+            <Route path='/SeasonalDishes' element={<SeasonalDishes />} />
+            <Route path='/TopDishes' element={<TopDishes /> } />
         </Routes>
     </BrowserRouter>
 </>
