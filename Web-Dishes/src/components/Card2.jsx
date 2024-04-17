@@ -14,7 +14,7 @@ const Card2 = ({ title, imageUrl, time, rating, dishPath }) => {
             className="w-full h-48 object-cover rounded-t-lg border-2 border-[#00544f]"
             src={imageUrl}
             alt={title} 
-          />
+          />   
           {/* Rating */}
           <div className="rating-container absolute top-0 right-0 p-2">
             <div className="rating-content">
