@@ -8,7 +8,7 @@ export default function NavBarDishes({ onCategoryClick }) {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
     onCategoryClick(category);
-  };
+  };    
 
   const categories = [
     { path: "/All-Indian-Dishes", label: "Indian Dishes" },

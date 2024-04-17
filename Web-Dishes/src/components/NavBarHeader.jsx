@@ -129,7 +129,7 @@ return (
                                 </div>
                             </div>
 
-                         </li>
+                         </li>   
                         {/* All*/}
                         {location.pathname !== '/' && (
                         <li className='flex items-center gap-2'>
