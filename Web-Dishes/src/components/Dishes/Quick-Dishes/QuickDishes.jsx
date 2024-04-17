@@ -1,5 +1,5 @@
 import React from 'react';
-import QuickDishesRecommendedData from '../../../Data/QuickDishesRecommendedData/QuickDishesRecommendedData';
+import QuickDishesRecommendedData from '../../../Data/QuickDishesData/QuickDishesRecommendedData/QuickDishesRecommendedData';
 import Footer from '../../../components/FooterItem/Footer';
 import BannerCard from '../../BannerCard';
 import Card2 from '../../Card2';
@@ -8,6 +8,8 @@ import { useMediaQuery } from 'react-responsive';
 import Marquee from "react-fast-marquee";
 import { Flip } from 'react-reveal';  
 import { useSpring, animated } from 'react-spring'; 
+import { FaAngleRight } from 'react-icons/fa6';
+import { MdOutlineUnfoldMoreDouble } from 'react-icons/md';
 
 function QuickDishes() {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -32,21 +34,22 @@ function QuickDishes() {
       <div>
         <BannerCard slides={slides} subtitle='Quick Culinary Bliss - Delicious Expeditions in Speedy Dishes' title={<img src={DishText} className='filter invert' alt='Indian' />} />
       </div>
-      <div>
+      <div className='py-12'>
         <div>
-          <h1 className='text-center text-lg md:text-3xl lg:text-4xl text-[#00544f] font-bold mt-10'>Random Dishes</h1>
-
-          <div className='flex justify-end mt-12 mr-8'>
-            <button onClick={() => window.scrollTo(0, 0)}>
-              <Link to='/SuggestedRandomQuickDishes' className=' text-end font-bold text-lg sm:text-xl md:text-2xl'>See More</Link>
-            </button>
+        <div className="pb-6 pt-6 flex justify-between px-4 md:px-8">
+            <h1 className='text-center text-lg sm:text-xl md:text-3xl lg:text-4xl text-[#00544f] font-semibold '>Quick Dishes</h1>
+            <div className='flex justify-end mr-8'>
+              <button onClick={() => window.scrollTo(0, 0)}>
+                <Link to='/SuggestedRandomQuickDishes' className=' text-end font-semibold text-lg sm:text-lg md:text-2xl'><MdOutlineUnfoldMoreDouble  size={30}/></Link>
+              </button>
+            </div>
           </div>
 
           <Marquee>
-            <div className="flex my-12 gap-3 justify-center overflow-hidden items-stretch">
+          <div className="flex gap-3 py-3 ml-5 mr-3 overflow-hidden" >
               {QuickDishesRecommendedData.map((dish, index) => (
                 <Flip key={index} cascade left> 
-                  <animated.div style={fadeIn}>
+                  <animated.div style={fadeIn} className="flex-grow h-full">
                     <Card2 title={dish.dishName} dishPath={dish.dishPath} imageUrl={dish.dishImage} time={dish.time} rating={dish.rating} />
                   </animated.div>
                 </Flip>
@@ -54,19 +57,22 @@ function QuickDishes() {
             </div>
           </Marquee>
         </div>
-        <div className="">
-          <h1 className='text-center text-lg md:text-3xl lg:text-4xl text-[#00544f] font-bold mt-10'>Recommended Dishes</h1>
-          <div className='flex justify-end mr-8'>
-            <button onClick={() => window.scrollTo(0, 0)}>
-              <Link to='/RecommendedQuickDishes' className=' text-end font-bold text-lg sm:text-xl md:text-2xl'>See More</Link>
-            </button>
+
+        <div>
+          <div className="pb-6 pt-6 flex justify-between px-4 md:px-8">
+              <h1 className='text-center text-lg sm:text-xl md:text-3xl lg:text-4xl text-[#00544f] font-semibold '>Recommended Dishes</h1>
+              <div className='flex justify-end mr-8'>
+                <button onClick={() => window.scrollTo(0, 0)}>
+                  <Link to='/RecommendedQuickDishes' className=' text-end font-semibold text-lg sm:text-lg md:text-2xl'><MdOutlineUnfoldMoreDouble  size={30}/></Link>
+                </button>
+              </div>
           </div>
 
           <Marquee>
-            <div className="flex my-12 gap-3 justify-center overflow-hidden items-stretch">
+          <div className="flex gap-3 py-3 ml-5 mr-3 overflow-hidden" >
               {QuickDishesRecommendedData.map((dish, index) => (
                 <Flip key={index} cascade left> 
-                  <animated.div style={fadeIn}> 
+                  <animated.div style={fadeIn} className="flex-grow h-full"> 
                     <Card2 title={dish.dishName} dishPath={dish.dishPath} imageUrl={dish.dishImage} time={dish.time} rating={dish.rating} />
                   </animated.div>
                 </Flip>

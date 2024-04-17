@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import SeeMoreDishes from "../SeeMoreDishes";
+import SeeMoreDishes from "../../Dishes/SeeMoreDishes";
 import QuickDishesRecommendedData from "../../../Data/QuickDishesData/QuickDishesRecommendedData/QuickDishesRecommendedData";
-import SeeMoreDescription from "../SeeMoreDescription";
+import SeeMoreDescription from "../../Dishes/SeeMoreDescription";
 
-function SuggestedRandomQuickDishes() {
+function Bakery() {
   const [searchTerm, setSearchTerm] = useState("");  
   const filteredDish = QuickDishesRecommendedData.filter(dish =>
     dish.dishName.toLowerCase().includes(searchTerm.toLowerCase())
@@ -12,10 +12,10 @@ function SuggestedRandomQuickDishes() {
   return (
     <div className="bg-[#f7f3cd]">
       <SeeMoreDescription searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
-      <h1 className="py-12 text-xl sm:text-3xl md:text-5xl text-center font-bold text-black">Quick Dishes</h1>
+      <h1 className="py-12 text-xl sm:text-3xl md:text-5xl text-center font-bold text-black">Bakery</h1>
       <SeeMoreDishes searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
     </div>
   );
 }
 
-export default SuggestedRandomQuickDishes;
+export default Bakery;

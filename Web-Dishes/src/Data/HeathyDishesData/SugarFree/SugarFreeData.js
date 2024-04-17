@@ -3,12 +3,12 @@ import GlutenFree from "../HighProtein/Gluten-Free.jpg";
 const SugarFreeData = [
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Quinoa Salad with Grilled Chicken",
+    dishName: "Quinoa Salad with Grilled Chicken",
     time: "30",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "300",
       protein: "25g",
@@ -19,11 +19,11 @@ const SugarFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl: GlutenFree,
-    title: "Grilled Salmon with Roasted Vegetables",
+    dishImage: GlutenFree,
+    dishName: "Grilled Salmon with Roasted Vegetables",
     time: "25",
     rating: "4.7",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "250",
       protein: "20g",
@@ -34,12 +34,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Stir-Fried Tofu with Vegetables",
+    dishName: "Stir-Fried Tofu with Vegetables",
     time: "20",
     rating: "4.1",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "200",
       protein: "15g",
@@ -50,12 +50,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Gluten-Free Chicken Stir-Fry with Rice Noodles",
+    dishName: "Gluten-Free Chicken Stir-Fry with Rice Noodles",
     time: "30",
     rating: "4.0",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "280",
       protein: "18g",
@@ -66,12 +66,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Quinoa Stuffed Bell Peppers",
+    dishName: "Quinoa Stuffed Bell Peppers",
     time: "15",
     rating: "4.4",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "220",
       protein: "10g",
@@ -82,12 +82,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Baked Chicken with Sweet Potato Mash",
+    dishName: "Baked Chicken with Sweet Potato Mash",
     time: "45",
     rating: "4.2",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "320",
       protein: "25g",
@@ -98,12 +98,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Gluten-Free Vegetable Pizza with Cauliflower",
+    dishName: "Gluten-Free Vegetable Pizza with Cauliflower",
     time: "40",
     rating: "4.5",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "280",
       protein: "10g",
@@ -112,14 +112,14 @@ const SugarFreeData = [
       fiber: "6g"
     }
   },
-   {
+  {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Shrimp and Avocado Salad",
+    dishName: "Shrimp and Avocado Salad",
     time: "15",
     rating: "4.4",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "220",
       protein: "15g",
@@ -130,12 +130,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Turkey Meatballs with Zucchini Noodles",
+    dishName: "Turkey Meatballs with Zucchini Noodles",
     time: "35",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "250",
       protein: "20g",
@@ -146,12 +146,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Vegetable Stir-Fry with Quinoa",
+    dishName: "Vegetable Stir-Fry with Quinoa",
     time: "25",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "120",
       protein: "12g",
@@ -162,12 +162,12 @@ const SugarFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Baked Salmon with Lemon Herb Sauce",
+    dishName: "Baked Salmon with Lemon Herb Sauce",
     time: "25",
     rating: "4.2",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "280",
       protein: "25g",
@@ -179,12 +179,12 @@ const SugarFreeData = [
 
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Chicken and Vegetable Soup",
+    dishName: "Chicken and Vegetable Soup",
     time: "40",
     rating: "4.7",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
     nutritionalValues: {
       calories: "180",
       fats: "12g",

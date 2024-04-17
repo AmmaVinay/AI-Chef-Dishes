@@ -1,17 +1,21 @@
-import React from "react";
-import Card2 from "../Card2";
-import SeasonalDishesData from '../../Data/Seasonal-Top-Dishes/SeasonalDishesData'
+import React, { useState } from "react"; // Import useState from React
+import SeasonalDishesData from '../../Data/Seasonal-Top-Dishes/SeasonalDishesData';
+import SeeMoreDishes from "../Dishes/SeeMoreDishes";
+import SeeMoreDescription from "../Dishes/SeeMoreDescription";
 
 function SeasonalDishes() {
-    return <div className="bg-[#f7f3cd]"> 
-        <h1 className="py-12 text-xl sm:text-3xl md:text-5xl text-center font-bold text-black">Seasonal Dishes</h1>
+  const [searchTerm, setSearchTerm] = useState("");  
+  const filteredDish = SeasonalDishesData.filter(dish =>
+    dish.dishName.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-        <div className="flex flex-wrap justify-center">
-            {SeasonalDishesData.map((item, index) => (
-                <Card2 key={index} title={item.title} time={item.time} rating={item.rating} imageUrl={item.imageUrl} />
-            ))}
-        </div>
-    </div>;
-    }
+  return (
+    <div className="bg-[#f7f3cd]">
+      <SeeMoreDescription searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
+      <h1 className="py-12 text-3xl  md:text-5xl text-center font-bold text-[#00544f]">Seasonal Dishes</h1>
+      <SeeMoreDishes searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
+    </div>
+  );
+}
 
 export default SeasonalDishes;

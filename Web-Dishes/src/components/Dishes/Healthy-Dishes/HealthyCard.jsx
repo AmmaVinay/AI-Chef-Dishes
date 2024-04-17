@@ -1,16 +1,15 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import { Fade, Zoom, Slide } from "react-reveal";
 import { Link } from "react-router-dom";
  
 function HealthyCard({
-  title,
-  imageUrl,
-  description,
+  dishName,
+  dishImage,
+  values,
   nutritionalValues,
   rating,
   time,
-  dishType,
+  dishType, 
   dishPath
 }) {
   return (
@@ -22,8 +21,8 @@ function HealthyCard({
           <div className="flex items-center justify-center -mt-16">
               <div className="relative">
                 <img
-                  src={imageUrl}
-                  alt={title}
+                  src={dishImage}
+                  alt={dishName}
                   className="w-24 h-24 rounded-full object-cover border-4 border-white"
                   style={{ borderRadius: '50%', width: '8rem', height: '8rem' }}
                 />
@@ -36,14 +35,14 @@ function HealthyCard({
               </div>
           </div>
           <div className="">
-            <div className="flex flex-col justify-around items-center">
-                <h2 className="text-lg text-white text-center font-bold mb-2 max-w-[17rem]">{title}</h2>
+            <div className="flex flex-col justify-center items-center h-[5rem]">  
+                <h2 className="text-lg text-white text-center  font-bold mb-2 max-w-[17rem]">{dishName}</h2>
                 <div className="flex justify-center items-center mb-2">
-                  <p className="text-sm text-gray-300">{time} Mins</p>
+                    <p className="text-sm text-gray-300">{time} Mins</p>
                 </div>
             </div>
             <div className="bg-white text-black w-full p-4 rounded-b-lg">
-                <p className="font-bold text-center text-sm mb-2">{description}</p>
+                <p className="font-bold text-center text-sm mb-2">{values}</p>
               <hr className="w-full border-1 border-gray-600 mb-2" />
               <ul className="flex items-center justify-around gap-5 text-sm">
                   <div className="flex flex-col items-center">

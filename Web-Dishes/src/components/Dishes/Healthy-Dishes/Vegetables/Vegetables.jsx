@@ -14,9 +14,9 @@ function Vegetables({ dishType }) {
         </button>
     </div>
     <Marquee> 
-        <div className="flex gap-3 flex-wrap items-stretch justify-center">
+        <div className="flex gap-3 flex-wrap items-stretch justify-center overflow-hidden">
             {filteredData.map((dish, index) => (
-            <HealthyCard key={index} time={dish.time} title={dish.title} imageUrl={dish.imageUrl} description={dish.description} rating={dish.rating} nutritionalValues={dish.nutritionalValues} dishType={dish.dishType} dishPath={dish.dishPath} />
+            <HealthyCard key={index} time={dish.time} dishName={dish.dishName} dishImage={dish.dishImage} values={dish.values} rating={dish.rating} nutritionalValues={dish.nutritionalValues} dishType={dish.dishType} dishPath={dish.dishPath} />
             ))}
         </div>
     </Marquee>

@@ -19,21 +19,9 @@ const DishText = 'https://see.fontimg.com/api/renderfont4/BWA45/eyJyIjoiZnMiLCJo
       <div>
          <BannerCard slides={slides} title={<img src={DishText} className=' filter invert  flex' alt="Indian" />} subtitle="Explore Our World of Exquisite Luxury Cuisine"/>
       </div>
-          <HealthyDishCategories />
+        <HealthyDishCategories />
        <div className="mt-5">
-{/*         <div className='flex justify-between items-center'>
-          <h1 className='text-3xl font-bold pb-8'>Recommended Dishes</h1>
-          <p className='text-3xl font-bold pb-8'>
-            <Link to='/RecommandedSeeMore'>See More</Link>
-          </p>
-        </div>
-     <div className="flex flex-wrap justify-center items-stretch">
-          {HealthyRecommendedData.map((item, index) => (
-            <Card2 key={index} title={item.title} time={item.time} rating={item.rating} imageUrl={item.imageUrl} />
-          ))}
-        </div>
-          */}
-      <Footer />
+       <Footer />
       </div>
     </div>
   );

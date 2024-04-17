@@ -1,18 +1,21 @@
-import React from "react";
-import Card2 from "../Card2";
+import React, { useState } from "react";
 import TopDishesData from '../../Data/Seasonal-Top-Dishes/TopDishesData';
+import SeeMoreDishes from "../Dishes/SeeMoreDishes";
+import SeeMoreDescription from "../Dishes/SeeMoreDescription";
 
 function TopDishes() {
-    return <div className="bg-[#f7f3cd]">
-    <h1 className="py-12 text-xl sm:text-3xl md:text-5xl text-center font-bold text-black">Top Dishes</h1>
-    <div className="flex flex-wrap justify-center ">
-        {TopDishesData.map((item, index) => (
-           <Card2 key={index} title={item.title} time={item.time} rating={item.rating} imageUrl={item.imageUrl} />
-        ))}
+  const [searchTerm, setSearchTerm] = useState("");  
+  const filteredDish = TopDishesData.filter(dish =>
+    dish.dishName.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div className="bg-[#f7f3cd]">
+      <SeeMoreDescription searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
+      <h1 className="py-12 text-3xl  md:text-5xl text-center font-bold text-[#00544f]">Top Dishes</h1>
+      <SeeMoreDishes searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
     </div>
-
-
-</div>;
+  );
 }
 
 export default TopDishes;

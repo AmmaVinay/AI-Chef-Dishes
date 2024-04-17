@@ -29,7 +29,7 @@ export default function NavBarDishes({ onCategoryClick }) {
           <Link
             key={path}
             to={path}
-            className={`nav-link ${selectedCategory === label ? "active" : ""}  rounded-md px-3 py-2 text-lg font-medium`}
+            className={`nav-link ${selectedCategory === label ? "active" : ""} leading-4  px-3 py-2 text-lg font-medium`}
             onClick={() => handleCategoryClick(label)}
           >
             {label}

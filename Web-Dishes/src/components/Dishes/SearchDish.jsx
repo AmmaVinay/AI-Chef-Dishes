@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMicrophone } from "react-icons/fa";
+import { FaMicrophone } from "react-icons/fa"; 
 import { FiSearch } from "react-icons/fi";
 
 function SearchDish({ setSearchTerm }) {

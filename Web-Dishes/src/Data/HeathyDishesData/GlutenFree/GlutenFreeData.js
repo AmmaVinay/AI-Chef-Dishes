@@ -3,12 +3,14 @@ import GlutenFree from "../HighProtein/Gluten-Free.jpg";
 const GlutenFreeData = [
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Quinoa Salad with Grilled Chicken",
+    dishName: "Quinoa Salad with Grilled Chicken",
     time: "30",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A nutritious and delicious salad featuring protein-packed grilled chicken, nutty quinoa, and a medley of fresh vegetables. Perfect for a light and satisfying meal.",
     nutritionalValues: {
       calories: "300",
       protein: "25g",
@@ -19,11 +21,13 @@ const GlutenFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl: GlutenFree,
-    title: "Grilled Salmon with Roasted Vegetables",
+    dishImage: GlutenFree,
+    dishName: "Grilled Salmon with Roasted Vegetables",
     time: "25",
     rating: "4.7",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Juicy and flavorful grilled salmon served alongside an assortment of tender roasted vegetables. A healthy and hearty dish that's bursting with nutrients and flavor.",
     nutritionalValues: {
       calories: "250",
       protein: "20g",
@@ -34,12 +38,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Stir-Fried Tofu with Vegetables",
+    dishName: "Stir-Fried Tofu with Vegetables",
     time: "20",
     rating: "4.1",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A flavorful and nutritious stir-fry featuring tofu, crunchy vegetables, and aromatic spices. Quick to prepare and perfect for a healthy vegetarian meal.",
     nutritionalValues: {
       calories: "200",
       protein: "15g",
@@ -50,12 +56,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Gluten-Free Chicken Stir-Fry with Rice Noodles",
+    dishName: "Gluten-Free Chicken Stir-Fry with Rice Noodles",
     time: "30",
     rating: "4.0",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A flavorful stir-fry made with tender chicken, colorful vegetables, and gluten-free rice noodles. Quick to prepare and perfect for those following a gluten-free diet.",
     nutritionalValues: {
       calories: "280",
       protein: "18g",
@@ -66,12 +74,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Quinoa Stuffed Bell Peppers",
+    dishName: "Quinoa Stuffed Bell Peppers",
     time: "15",
     rating: "4.4",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Colorful bell peppers stuffed with a flavorful mixture of quinoa, vegetables, and spices. A healthy and satisfying dish suitable for any occasion.",
     nutritionalValues: {
       calories: "220",
       protein: "10g",
@@ -82,12 +92,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Baked Chicken with Sweet Potato Mash",
+    dishName: "Baked Chicken with Sweet Potato Mash",
     time: "45",
     rating: "4.2",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Tender baked chicken served with creamy sweet potato mash. A wholesome and comforting meal that's perfect for any day of the week.",
     nutritionalValues: {
       calories: "320",
       protein: "25g",
@@ -98,12 +110,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Gluten-Free Vegetable Pizza with Cauliflower",
+    dishName: "Gluten-Free Vegetable Pizza with Cauliflower",
     time: "40",
     rating: "4.5",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A healthier twist on classic pizza, featuring a gluten-free cauliflower crust topped with a colorful array of fresh vegetables and cheese. Perfect for those seeking a lighter alternative to traditional pizza.",
     nutritionalValues: {
       calories: "280",
       protein: "10g",
@@ -114,12 +128,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Shrimp and Avocado Salad",
+    dishName: "Shrimp and Avocado Salad",
     time: "15",
     rating: "4.4",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A refreshing and nutritious salad featuring succulent shrimp, creamy avocado, and crisp vegetables tossed in a tangy dressing. Perfect for a light and satisfying meal.",
     nutritionalValues: {
       calories: "220",
       protein: "15g",
@@ -130,12 +146,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Turkey Meatballs with Zucchini Noodles",
+    dishName: "Turkey Meatballs with Zucchini Noodles",
     time: "35",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Tender turkey meatballs served over a bed of spiralized zucchini noodles and topped with a savory tomato sauce. A lighter alternative to traditional pasta dishes that's both delicious and nutritious.",
     nutritionalValues: {
       calories: "250",
       protein: "20g",
@@ -146,12 +164,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Vegetable Stir-Fry with Quinoa",
+    dishName: "Vegetable Stir-Fry with Quinoa",
     time: "25",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A colorful and flavorful stir-fry featuring an assortment of fresh vegetables and protein-rich quinoa. Quick to prepare and perfect for a nutritious vegetarian meal.",
     nutritionalValues: {
       calories: "120",
       protein: "12g",
@@ -162,12 +182,14 @@ const GlutenFreeData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Baked Salmon with Lemon Herb Sauce",
+    dishName: "Baked Salmon with Lemon Herb Sauce",
     time: "25",
     rating: "4.2",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Tender baked salmon fillets drizzled with a zesty lemon herb sauce. A simple yet elegant dish that's bursting with fresh flavors and omega-3 fatty acids.",
     nutritionalValues: {
       calories: "280",
       protein: "25g",
@@ -176,21 +198,22 @@ const GlutenFreeData = [
       fiber: "3g"
     }
   },
-
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Chicken and Vegetable Soup",
+    dishName: "Chicken and Vegetable Soup",
     time: "40",
     rating: "4.7",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A comforting and nutritious soup loaded with tender chicken, hearty vegetables, and flavorful herbs. Perfect for warming up on a chilly day or as a light and satisfying meal anytime.",
     nutritionalValues: {
       calories: "180",
-      fats: "12g",
       protein: "15g",
-      fiber: "8g",
-      carbs: "4g"
+      carbs: "4g",
+      fats: "12g",
+      fiber: "8g"
     }
   }
 ];

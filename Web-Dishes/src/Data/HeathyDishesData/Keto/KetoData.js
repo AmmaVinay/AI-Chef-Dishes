@@ -3,12 +3,14 @@ import GlutenFree from "../HighProtein/Gluten-Free.jpg";
 const KetoData = [
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Grilled Chicken Breast with Steamed Broccoli",
+    dishName: "Grilled Chicken Breast with Steamed Broccoli",
     time: "30",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Delicious grilled chicken breast served with a side of steamed broccoli. A healthy and low-calorie meal option.",
     nutritionalValues: {
       calories: "250",
       protein: "30g",
@@ -19,11 +21,13 @@ const KetoData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl: GlutenFree,
-    title: "Keto Cauliflower Fried Rice",
+    dishImage: GlutenFree,
+    dishName: "Keto Cauliflower Fried Rice",
     time: "25",
     rating: "4.7",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A keto-friendly version of fried rice made with cauliflower rice, mixed vegetables, and seasoned with flavorful spices.",
     nutritionalValues: {
       calories: "200",
       protein: "8g",
@@ -34,12 +38,14 @@ const KetoData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Salmon Avocado Salad",
+    dishName: "Salmon Avocado Salad",
     time: "40",
     rating: "4.1",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A refreshing salad made with fresh salmon, avocado, mixed greens, cherry tomatoes, and a zesty dressing.",
     nutritionalValues: {
       calories: "300",
       protein: "20g",
@@ -50,12 +56,14 @@ const KetoData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Eggplant Parmesan",
+    dishName: "Eggplant Parmesan",
     time: "30",
     rating: "4.0",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Classic eggplant parmesan made with layers of breaded and fried eggplant slices, marinara sauce, and melted cheese.",
     nutritionalValues: {
       calories: "280",
       protein: "12g",
@@ -66,12 +74,14 @@ const KetoData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Grilled Shrimp Skewers with Zucchini Noodles",
+    dishName: "Grilled Shrimp Skewers with Zucchini Noodles",
     time: "15",
     rating: "4.4",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Delicious grilled shrimp skewers served over a bed of spiralized zucchini noodles, tossed in a flavorful sauce.",
     nutritionalValues: {
       calories: "220",
       protein: "25g",
@@ -82,11 +92,13 @@ const KetoData = [
   },
   {
     dishType: "Veg",
-    imageUrl: GlutenFree,
-    title: "Coconut with Chicken Curry",
+    dishImage: GlutenFree,
+    dishName: "Coconut with Chicken Curry",
     time: "45",
     rating: "4.2",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A fragrant and creamy chicken curry made with coconut milk, spices, and tender chicken pieces. Served with rice.",
     nutritionalValues: {
       calories: "280",
       protein: "25g",
@@ -97,12 +109,14 @@ const KetoData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Keto Butter Chicken",
+    dishImage:
+      "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
+    dishName: "Keto Butter Chicken",
     time: "40",
     rating: "4.5",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A rich and creamy Indian curry made with tender chicken pieces cooked in a buttery tomato-based sauce. Perfect for a keto-friendly meal.",
     nutritionalValues: {
       calories: "350",
       protein: "30g",
@@ -113,12 +127,14 @@ const KetoData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Zucchini Lasagna",
+    dishName: "Zucchini Lasagna",
     time: "15",
     rating: "4.4",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A healthier twist on classic lasagna, made with layers of thinly sliced zucchini, marinara sauce, and cheese.",
     nutritionalValues: {
       calories: "220",
       protein: "15g",
@@ -129,12 +145,14 @@ const KetoData = [
   },
   {
     dishType: "Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Keto Chocolate Avocado Mousse",
+    dishName: "Keto Chocolate Avocado Mousse",
     time: "35",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A rich and indulgent chocolate mousse made with ripe avocados, cocoa powder, and a touch of sweetener. A keto-friendly dessert option.",
     nutritionalValues: {
       calories: "200",
       protein: "4g",
@@ -145,11 +163,13 @@ const KetoData = [
   },
   {
     dishType: "Veg",
-    imageUrl: GlutenFree,
-    title: "Veggie Stir Fry with Quinoa",
+    dishImage: GlutenFree,
+    dishName: "Veggie Stir Fry with Quinoa",
     time: "25",
     rating: "4.6",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A colorful and nutritious stir-fry made with a variety of fresh vegetables and protein-packed quinoa. Seasoned with flavorful sauces.",
     nutritionalValues: {
       calories: "230",
       protein: "12g",
@@ -160,12 +180,14 @@ const KetoData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://irhindi.in/wp-content/uploads/2023/02/best-pizza-kaise-banate-hain.jpg",
-    title: "Baked Salmon with Lemon Herb Sauce",
+    dishName: "Baked Salmon with Lemon Herb Sauce",
     time: "30",
     rating: "4.2",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "Tender and flaky baked salmon fillets served with a tangy lemon herb sauce. A flavorful and healthy seafood dish.",
     nutritionalValues: {
       calories: "280",
       protein: "25g",
@@ -176,12 +198,14 @@ const KetoData = [
   },
   {
     dishType: "Non-Veg",
-    imageUrl:
+    dishImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5ptKb36-8JlhrehpleZi6lqO2lX3M_QyWA&usqp=CAU",
-    title: "Chicken and Vegetable Soup",
+    dishName: "Chicken and Vegetable Soup",
     time: "40",
     rating: "4.7",
-    description: "Nutritional values (per 100g)",
+    values: "Nutritional values (per 100g)",
+    description:
+      "A comforting and hearty soup made with tender chicken, assorted vegetables, and flavorful broth. Perfect for a cozy meal.",
     nutritionalValues: {
       calories: "180",
       protein: "12g",

@@ -1,8 +1,7 @@
-import OatMeal from "../HelathyDishesRecommendedData/Oat-Meal.jpg";
-import GreekSalad from "../HelathyDishesRecommendedData/Greek-Salad.jpg";
-import ChickpeaSandwich from "../HelathyDishesRecommendedData/Chickpea-Sandwich.jpg";
-import FishTacoSalad from "../HelathyDishesRecommendedData/Fish-Taco-Salad.jpg";
-
+import OatMeal from "../QuickDishesRecommendedData/Oat-Meal.jpg";
+import GreekSalad from "../QuickDishesRecommendedData/Greek-Salad.jpg";
+import ChickpeaSandwich from "../QuickDishesRecommendedData/Chickpea-Sandwich.jpg";
+import FishTacoSalad from "../QuickDishesRecommendedData/Fish-Taco-Salad.jpg";
 //import GreekSalad from "../HelathyDishesRecommendedData/Greek-Salad.jpg";
 //import ChickpeaSandwich from "../HelathyDishesRecommendedData/Chickpea-Sandwich.jpg";
 //import FishTacoSalad from "../HelathyDishesRecommendedData/Fish-Taco-Salad.jpg";
@@ -23,167 +22,147 @@ import FishTacoSalad from "../HelathyDishesRecommendedData/Fish-Taco-Salad.jpg";
 //import TunaSalad from "../HelathyDishesRecommendedData/Tuna-Salad.jpg";
 //import GrilledChickenSalad from "../HelathyDishesRecommendedData/Grilled-Chicken-Salad.jpg";
 
-const QuickDishesRecommendedData = [
+const SuggestedRandomQuickDishesData = [
   {
     dishType: "Non-Veg",
     dishName: "Oat-Meal",
     time: "120",
     rating: "4.5",
-    dishImage: OatMeal,
-    countryName: "India"
+    dishImage: OatMeal
   },
   {
     dishType: "Veg",
     dishName: "Greek Salad",
     time: "15",
     rating: "4.8",
-    dishImage: GreekSalad,
-    countryName: "Afghanistan"
+    dishImage: GreekSalad
   },
   {
     dishType: "Veg",
     dishName: "Chickpea Sandwich",
     time: "10",
     rating: "4.6",
-    dishImage: ChickpeaSandwich,
-    countryName: "Afghanistan"
+    dishImage: ChickpeaSandwich
   },
   {
     dishType: "Non-Veg",
     dishName: "Fish Taco Salad",
     time: "20",
     rating: "4.7",
-    dishImage: FishTacoSalad,
-    countryName: "Spain"
+    dishImage: FishTacoSalad
   },
   {
     dishType: "Veg",
     dishName: "Avocado Toast",
     time: "10",
     rating: "4.8",
-    dishImage: ChickpeaSandwich,
-    countryName: "Spain"
+    dishImage: AvocadoToast
   },
   {
     dishType: "Veg",
     dishName: "Quinoa Salad",
     time: "15",
     rating: "4.7",
-    dishImage: ChickpeaSandwich,
-    countryName: "Italy"
+    dishImage: QuinoaSalad
   },
   {
     dishType: "Veg",
     dishName: "Caprese Salad",
     time: "15",
     rating: "4.6",
-    dishImage: GreekSalad,
-    countryName: "Italy"
+    dishImage: CapreseSalad
   },
   {
     dishType: "Non-Veg",
     dishName: "Chicken Quesadillas",
     time: "25",
     rating: "4.8",
-    dishImage: OatMeal,
-    countryName: "India"
+    dishImage: ChickenQuesadillas
   },
   {
     dishType: "Non-Veg",
     dishName: "Beef Tacos",
     time: "20",
     rating: "4.6",
-    dishImage: FishTacoSalad,
-    countryName: "Italy"
+    dishImage: BeefTacos
   },
   {
     dishType: "Veg",
     dishName: "Pesto Pasta",
     time: "15",
     rating: "4.6",
-    dishImage: ChickpeaSandwich,
-    countryName: "India"
+    dishImage: PestoPasta
   },
   {
     dishType: "Veg",
     dishName: "Mushroom Risotto",
     time: "25",
     rating: "4.7",
-    dishImage: GreekSalad,
-    countryName: "Italy"
+    dishImage: MushroomRisotto
   },
   {
     dishType: "Non-Veg",
     dishName: "Salmon Teriyaki",
     time: "25",
     rating: "4.8",
-    dishImage: OatMeal,
-    countryName: "India"
+    dishImage: SalmonTeriyaki
   },
   {
     dishType: "Non-Veg",
     dishName: "Beef Burger",
     time: "15",
     rating: "4.6",
-    dishImage: FishTacoSalad,
-    countryName: "India"
+    dishImage: BeefBurger
   },
   {
     dishType: "Veg",
     dishName: "Vegetable Stir-Fry",
     time: "15",
     rating: "4.5",
-    dishImage: ChickpeaSandwich,
-    countryName: "India"
+    dishImage: VegetableStirFry
   },
   {
     dishType: "Non-Veg",
     dishName: "Chicken Fried Rice",
     time: "20",
     rating: "4.5",
-    dishImage: GreekSalad,
-    countryName: "India"
+    dishImage: ChickenFriedRice
   },
   {
     dishType: "Veg",
     dishName: "Bruschetta",
     time: "10",
     rating: "4.5",
-    dishImage: OatMeal,
-    countryName: "India"
+    dishImage: Bruschetta
   },
   {
     dishType: "Veg",
     dishName: "Spinach Salad",
     time: "10",
     rating: "4.7",
-    dishImage: FishTacoSalad,
-    countryName: "India"
+    dishImage: SpinachSalad
   },
   {
     dishType: "Veg",
     dishName: "Vegetable Soup",
     time: "15",
     rating: "4.6",
-    dishImage: ChickpeaSandwich,
-    countryName: "India"
+    dishImage: VegetableSoup
   },
   {
     dishType: "Non-Veg",
     dishName: "Tuna Salad",
     time: "10",
     rating: "4.5",
-    dishImage: GreekSalad,
-    countryName: "Spain"
+    dishImage: TunaSalad
   },
   {
     dishType: "Non-Veg",
     dishName: "Grilled Chicken Salad",
     time: "20",
     rating: "4.7",
-    dishImage: OatMeal,
-    countryName: "Spain"
+    dishImage: GrilledChickenSalad
   }
 ];
 
-export default QuickDishesRecommendedData;
+export default SuggestedRandomQuickDishesData;

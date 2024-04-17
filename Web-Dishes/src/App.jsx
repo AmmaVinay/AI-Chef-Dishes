@@ -65,6 +65,12 @@ import SugarFreeSeeMore from './components/Dishes/Healthy-Dishes/Sugar-Free/Suga
 import VegetablesSeeMore from './components/Dishes/Healthy-Dishes/Vegetables/VegetablesSeeMore';
 import SeasonalDishes from './components/Seasonal-Top/SeasonalDishes';
 import TopDishes from './components/Seasonal-Top/TopDishes';
+import CulinaryCategories from './components/Choices/CulinaryCategories/CulinaryCategories';
+import Beverages from './components/Choices/CulinaryCategories/Beverages';
+import Snacks from './components/Choices/CulinaryCategories/Snacks';
+import Desert from './components/Choices/CulinaryCategories/Desert';
+import Soup from './components/Choices/CulinaryCategories/Soup';
+import Bakery from './components/Choices/CulinaryCategories/Bakery';
 const App = () => {
 return (
 <>
@@ -133,6 +139,13 @@ return (
             <Route path='/RecommandedQuickDishes' element={<RecommendedQuickDishes />} />
             <Route path='/SeasonalDishes' element={<SeasonalDishes />} />
             <Route path='/TopDishes' element={<TopDishes /> } />
+            <Route path='/CulinaryCategories' element={<CulinaryCategories /> } />
+            <Route path='/Beverages' element={<Beverages /> } />
+            <Route path='/Snacks' element={<Snacks /> } />
+            <Route path='/Desert' element={<Desert /> } />
+            <Route path='/Soup' element={<Soup /> } />
+            <Route path='/Bakery' element={<Bakery /> } />
+
         </Routes>
     </BrowserRouter>
 </>
