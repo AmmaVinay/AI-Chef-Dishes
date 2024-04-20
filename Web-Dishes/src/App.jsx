@@ -71,6 +71,7 @@ import Snacks from './components/Choices/CulinaryCategories/Snacks';
 import Desert from './components/Choices/CulinaryCategories/Desert';
 import Soup from './components/Choices/CulinaryCategories/Soup';
 import Bakery from './components/Choices/CulinaryCategories/Bakery';
+import Settings from './components/Settings';
 const App = () => {
 return (
 <>
@@ -144,7 +145,8 @@ return (
             <Route path='/Snacks' element={<Snacks /> } />
             <Route path='/Desert' element={<Desert /> } />
             <Route path='/Soup' element={<Soup /> } />
-            <Route path='/Bakery' element={<Bakery /> } />
+            <Route path='/Bakery' element={<Bakery /> } /> 
+            <Route path='/Settings' element={<Settings /> } />
 
         </Routes>
     </BrowserRouter>
