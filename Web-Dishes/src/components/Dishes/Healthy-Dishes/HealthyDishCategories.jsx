@@ -51,7 +51,7 @@ function HealthyDishCategories() {
 
   return (
     <div className="">
-      <nav className=" bg-[#f7f3cd] z-50 top-0 sticky shadow-lg gap-3">
+      <nav className=" bg-[#f7f3cd] z-10 top-0 sticky shadow-lg gap-3">
         <div className="flex flex-wrap  items-center shadow-lg justify-between bg-white mx-auto py-3">
           <div className="">
             <FormControl variant="outlined">
