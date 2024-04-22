@@ -9,9 +9,9 @@ function Settings() {
     };
 
     return (
-        <div className="container p-10 bg-[#f7f3cd] min-h-screen">
+        <div className="w-full p-10 bg-[#f7f3cd] min-h-[calc(100dvh-64px)]">
             <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">Settings</h1>
-            <div className="space-y-6">
+            <div className="container mx-auto space-y-6">
                 <div className="flex justify-between items-center bg-white rounded-lg p-4 shadow-md">
                     <h2 className="text-lg md:text-xl font-semibold">Notifications</h2>
                     <label className="flex items-center cursor-pointer">
@@ -23,7 +23,7 @@ function Settings() {
                                 onChange={toggleNotification}
                             />
                             <div className="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner">
-                                <div className={`toggle__dot absolute w-6 h-6 bg-white rounded-full shadow-md top-0 transform ${notificationOn ? 'translate-x-full bg-green-500' : ''}`} />
+                                <div className={`toggle__dot absolute w-6 h-6 bg-white rounded-full shadow-md top-[-5px] transform ${notificationOn ? 'translate-x-full bg-green-500' : ''}`} />
                             </div>
                         </div>
                     </label>
@@ -41,7 +41,7 @@ function Settings() {
                     <p className="text-gray-600">English</p>
                 </div>
                 <div className="flex justify-between items-center bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition duration-300">
-                    <h2 className="text-lg md:text-xl font-semibold">Help & Feedback</h2>
+                    <a href="mailto:?to=info@aichefmaster.com" className="text-lg md:text-xl font-semibold">Help & Feedback</a>
                  </div>
                 <p className="text-gray-600">Get help and send feedback.</p>
                 <p className="text-gray-600">About & Legal</p>
