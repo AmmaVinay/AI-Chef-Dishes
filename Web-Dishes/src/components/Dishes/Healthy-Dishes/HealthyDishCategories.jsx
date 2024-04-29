@@ -48,7 +48,7 @@ function HealthyDishCategories() {
     { value: "Veg", label: "Veg", color: "#16b426" },
     { value: "Non-Veg", label: "Non-Veg", color: "#f01010" }
   ];
-    
+     
   return (
     <div>
       <nav className=" bg-[#f7f3cd] z-10 top-0 sticky shadow-lg gap-3">
