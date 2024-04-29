@@ -121,7 +121,7 @@ return (
             <Route path='/KetoSeeMore' element={<KetoSeeMore />} />
             <Route path='/SugarFreeSeeMore' element={<SugarFreeSeeMore />} />
             <Route path='/VegetablesSeeMore' element={<VegetablesSeeMore />} />
-
+ 
             <Route path='/chana-masala' element={<ChanaMasala />} />
             <Route path='/chana-masala-cook' element={<ChanaMasalaCook />} />
 
@@ -146,8 +146,7 @@ return (
             <Route path='/Desert' element={<Desert /> } />
             <Route path='/Soup' element={<Soup /> } />
             <Route path='/Bakery' element={<Bakery /> } /> 
-            <Route path='/Settings' element={<Settings /> } />
-
+            <Route path='/Settings' element={<Settings /> } />u
         </Routes>
     </BrowserRouter>
 </>
