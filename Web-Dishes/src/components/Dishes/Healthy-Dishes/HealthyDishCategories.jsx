@@ -50,7 +50,7 @@ function HealthyDishCategories() {
   ];
 
   return (
-    <div className="">
+    <div>
       <nav className=" bg-[#f7f3cd] z-10 top-0 sticky shadow-lg gap-3">
         <div className="flex flex-wrap  items-center shadow-lg justify-between px-3 bg-[#f7f3cd] mx-auto py-3">
           <div className="">
