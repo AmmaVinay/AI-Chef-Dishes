@@ -125,7 +125,7 @@ return (
             <Route path='/chana-masala' element={<ChanaMasala />} />
             <Route path='/chana-masala-cook' element={<ChanaMasalaCook />} />
 
-            <Route path='/Create-Menu' element={<CreateMenu />} />
+            <Route path='/Create-Menu' element={<CreateMenu />} />   
             
             <Route path='/Pesarattu-info' element={<SingleDish />} />
             <Route path='/ChooseVegNonVeg' element={<ChooseVegNonVeg />} />
