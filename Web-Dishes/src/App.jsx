@@ -121,7 +121,7 @@ return (
             <Route path='/KetoSeeMore' element={<KetoSeeMore />} />
             <Route path='/SugarFreeSeeMore' element={<SugarFreeSeeMore />} />
             <Route path='/VegetablesSeeMore' element={<VegetablesSeeMore />} />
- 
+  
             <Route path='/chana-masala' element={<ChanaMasala />} />
             <Route path='/chana-masala-cook' element={<ChanaMasalaCook />} />
 
