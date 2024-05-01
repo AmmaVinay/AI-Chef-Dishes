@@ -33,7 +33,7 @@ export default function NavBarDishes() {
             target={path === "/chef-intelligence" ? "_blank" : ""}
           >
             {label}
-          </Link>
+          </Link>  
         ))}
       </div>
     </div>
