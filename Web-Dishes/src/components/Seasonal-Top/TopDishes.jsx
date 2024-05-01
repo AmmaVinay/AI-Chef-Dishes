@@ -12,7 +12,7 @@ function TopDishes() {
 
   return (
     <div className="bg-[#f7f3cd]">
-       <SeeMoreDescription slideDishes={sliderDishes} />
+      <SeeMoreDescription slideDishes={sliderDishes} />
       <h1 className="py-12 text-3xl  md:text-5xl text-center font-bold text-[#00544f]">Top Dishes</h1>
       <SeeMoreDishes searchTerm={searchTerm} setSearchTerm={setSearchTerm} filteredDish={filteredDish} />
     </div>
