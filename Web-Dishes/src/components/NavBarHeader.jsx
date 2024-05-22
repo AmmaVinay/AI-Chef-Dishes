@@ -81,7 +81,7 @@ export default function NavBarHeader() {
                         <img className="h-14 rounded-lg w-auto navbar-logo" src='/assets/CompanyLogo.png' alt="LOGO" />
                         <p className="text-lg font-bold md:text-sm leading-4 lg:text-lg">AI CHEF MASTER</p>
                     </div>
-                </Link> 
+                </Link>
                 <div className="hidden md:flex overflow-hidden md:overflow-hidden ">
                     <ul className="flex flex-shrink leading-4 md:gap-4 lg:gap-4 xl:gap-6 self-end items-center">
                         <li className="text-base md:text-md">

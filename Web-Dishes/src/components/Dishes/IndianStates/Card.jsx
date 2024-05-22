@@ -12,7 +12,7 @@ const Card = ({ title, famousDish }) => {
         to: { opacity: 1 },
         config: { duration: 1000 },
     });
-
+ 
     return (
         <div className="mx-2">
             <div className="flex flex-row justify-between items-center">
@@ -35,7 +35,7 @@ const Card = ({ title, famousDish }) => {
                     <Flip key={index} cascade left>
                         <animated.div style={fadeIn} className="flex-grow h-full py-3">
                             <div style={{ height: "280px" }}>
-                                <Card2
+                                <Card2 
                                     title={dish.dish_name}
                                     dishPath={`/dish/${dish.dish_name}`}
                                     imageUrl={dish.image}

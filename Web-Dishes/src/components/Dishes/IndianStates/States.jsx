@@ -37,8 +37,8 @@ function IndianStates() {
                 />
             </div>
 
-            <div className='mb-16'>
-                <div className='flex mx-12 flex-row items-center justify-between '>
+            <div className=''>
+                <div className='flex mx-12 pb-8 flex-row items-center justify-between '>
                     <div className='flex text-black text-[2rem] mt-12'>
                         <h1 className='font-bold items-baseline text-xl sm:text-2xl md:text-4xl'> States</h1>
                     </div>
@@ -60,7 +60,7 @@ function IndianStates() {
                         {IndianStatesData.map((state, index) => (
                             <div key={index} className=''>
                                 <Link to={state.stateName}>
-                                    <div className='flex carding py-8 flex-col items-center hover:scale-110 transition-transform duration-300'>
+                                    <div className='flex carding flex-col items-center hover:scale-110 transition-transform duration-300'>
                                         <img
                                             style={{ borderRadius: '50%' }}
                                             className=' w-[180px] h-[180px] md:w-[200px] md:h-[200px] object-cover border-2 shadow-xl shadow-slate-400'
@@ -75,7 +75,7 @@ function IndianStates() {
                     </div>
                 )}
 
-                <div className='flex flex-row gap-3 flex-wrap justify-center items-center '>
+                <div className='flex flex-row gap-3 items-stretch flex-wrap justify-center '>
                     {IndianStatesData.map((state, index) => (
                         <>
                             {!viewMore && index < 4 ? (
@@ -83,16 +83,21 @@ function IndianStates() {
                             ) : (
                                 <>
                                     {viewMore ? (
-                                        <div key={index} className='text-center'>
+                                        <div key={index}>
                                             <Link to={state.stateName}>
-                                                <div className='flex py-8 flex-col items-center hover:scale-110 transition-transform duration-300'>
-                                                    <img
-                                                        style={{ borderRadius: '50%' }}
-                                                        className=' w-[160px] h-[160px] md:w-[200px] md:h-[200px] object-cover border-2 shadow-xl shadow-slate-400'
-                                                        src={state.stateLogo}
-                                                        alt={state.stateName}
-                                                    />
-                                                    <p className='mt-3 text-center text-lg font-bold'>{state.stateName}</p>
+                                                    <div className='py-4 h-full flex flex-col items-center text-center hover:scale-110 transition-transform duration-300'>
+                                                        <div>
+                                                            <img
+                                                                style={{ borderRadius: '50%' }}
+                                                                className='w-[160px] h-[160px] md:w-[200px] md:h-[200px] object-cover border-2 shadow-xl'
+                                                                src={state.stateLogo}
+                                                                alt={state.stateName}
+                                                            />
+
+                                                        </div>
+                                                        <div>
+                                                            <p className='mt-3 w-[160px] text-center text-lg font-bold'>{state.stateName}</p>
+                                                        </div>
                                                 </div>
                                             </Link>
                                         </div>
